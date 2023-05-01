@@ -24,3 +24,5 @@ The log files in the dataset you'll be working with are partitioned by year and 
 #### Example of log data files
         `log_data/2018/11/2018-11-12-events.json
          log_data/2018/11/2018-11-13-events.json`
+         
+         ![log-data](https://user-images.githubusercontent.com/80867381/235442887-f6298846-7541-4043-982f-a4d53a4640c8.png)
