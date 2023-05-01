@@ -3,7 +3,7 @@ A music streaming startup, __Sparkify__, has grown its user base and song databa
 
 I am tasked with building an ETL pipeline that extracts their data from S3, processes them using Spark, and loads the data back into S3 as a set of dimensional tables. This will allow their analytics team to continue finding insights about what songs their users are listening to.
 
-I'll be able to test my database and ETL pipeline by running queries given to you by the analytics team from Sparkify and compare your results with their expected results.
+I'll be able to test my database and ETL pipeline by running queries given to you by the analytics team from Sparkify and compare my results with their expected results.
 
 ### Song Dataset
 The first dataset is a subset of real data from the Million Song Dataset. Each file is in JSON format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID. For example, here are file paths to two files in this dataset.
