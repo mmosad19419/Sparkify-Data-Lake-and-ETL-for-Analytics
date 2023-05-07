@@ -55,3 +55,5 @@ The log files in the dataset you'll be working with are partitioned by year and 
 - `sparkify-etl.py` reads data from S3, processes that data using Spark, and writes them back to S3
 - `dl.cfg` contains your AWS credentials
 - `README.md` provides discussion on data processing and decisions
+- `udf.py` define helper udf functions to use it with spark in the ETL process
+- `sparkify-notebook.ipynb` Jupyter notebook to explore data and build and test the etl pipeline 
