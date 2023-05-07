@@ -5,6 +5,9 @@ I am tasked with building an ETL pipeline that extracts their data from S3, proc
 
 I'll be able to test my database and ETL pipeline by running queries given to you by the analytics team from Sparkify and compare my results with their expected results.
 
+# Data Flow Diagram on AWS
+![image](https://user-images.githubusercontent.com/80867381/236677391-93aa7f50-fd6e-460a-ac95-2451a3621df9.png)
+
 ### Song Dataset
 The first dataset is a subset of real data from the Million Song Dataset. Each file is in JSON format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID. For example, here are file paths to two files in this dataset.
 
