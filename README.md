@@ -45,13 +45,16 @@ The log files in the dataset you'll be working with are partitioned by year and 
 ![sparkifydb_erd](https://user-images.githubusercontent.com/80867381/214580187-78bda55c-c1ed-4296-8614-0dab5892df16.png)
 
 # Steps
-1. Load the data from s3 Buckets
+1. Build and Configure project infrastructure and resources on aws using terraform
 
-2. Develop complete ETL pipeline for logs and songs data using spark 
+2. Load the data from s3 Buckets
+
+3. Develop complete ETL pipeline for logs and songs data using spark 
 
 4. test the result aginst defined queries
 
 # Project Files
+- `Infrastructure-terraform` Build and Configure project infrastructure and resources on aws using terraform
 - `sparkify-etl.py` reads data from S3, processes that data using Spark, and writes them back to S3
 - `dl.cfg` contains your AWS credentials
 - `README.md` provides discussion on data processing and decisions
