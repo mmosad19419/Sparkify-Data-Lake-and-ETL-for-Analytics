@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  spark-engine:
+    container_name: spark-engine
+
+    image: stephanegaiffas/big_data_course:v2
+
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+
+    volumes:
+      - "./:/opt/polynote/notebooks/"
+    
+    restart: always
+
+    environment:
+      - PYSPARK_ALLOW_INSECURE_GATEWAY = 1

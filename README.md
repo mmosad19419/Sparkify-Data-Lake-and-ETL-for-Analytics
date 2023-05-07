@@ -26,3 +26,32 @@ The log files in the dataset you'll be working with are partitioned by year and 
          log_data/2018/11/2018-11-13-events.json`
          
  ![log-data](https://user-images.githubusercontent.com/80867381/235442887-f6298846-7541-4043-982f-a4d53a4640c8.png)
+
+# Song Plays Analytical Tables
+### Fact Table
+1. songplays - records in log data associated with song plays i.e. records with page `NextSong`
+    - songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
+
+### Dimension Tables
+2. users - users in the app
+  - user_id, first_name, last_name, gender, level
+3. songs - songs in music database
+  - song_id, title, artist_id, year, duration
+4. artists - artists in music database
+  - artist_id, name, location, latitude, longitude
+5. time - timestamps of records in songplays broken down into specific units
+  - start_time, hour, day, week, month, year, weekday
+
+![sparkifydb_erd](https://user-images.githubusercontent.com/80867381/214580187-78bda55c-c1ed-4296-8614-0dab5892df16.png)
+
+# Steps
+1. Load the data from s3 Buckets
+
+2. Develop complete ETL pipeline for logs and songs data using spark 
+
+4. test the result aginst defined queries
+
+# Project Files
+- `etl.py` reads data from S3, processes that data using Spark, and writes them back to S3
+- `dl.cfg` contains your AWS credentials
+- `README.md` provides discussion on data processing and decisions
