@@ -52,6 +52,6 @@ The log files in the dataset you'll be working with are partitioned by year and 
 4. test the result aginst defined queries
 
 # Project Files
-- `etl.py` reads data from S3, processes that data using Spark, and writes them back to S3
+- `sparkify-etl.py` reads data from S3, processes that data using Spark, and writes them back to S3
 - `dl.cfg` contains your AWS credentials
 - `README.md` provides discussion on data processing and decisions
