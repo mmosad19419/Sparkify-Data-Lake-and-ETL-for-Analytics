@@ -1,3 +1,5 @@
+# Sparkify-Data-Lake-and-ETL-for-Analytics
+
 # Project Introduction
 A music streaming startup, __Sparkify__, has grown its user base and song database even more and wants to move its data warehouse to a data lake. Their data resides in S3, in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
 
@@ -35,28 +37,28 @@ The log files in the dataset you'll be working with are partitioned by year and 
 ### Dimension Tables
 2. users - users in the app
   - user_id, first_name, last_name, gender, level
-3. songs - songs in music database
+3. songs - songs in the music database
   - song_id, title, artist_id, year, duration
-4. artists - artists in music database
+4. artists - artists in the music database
   - artist_id, name, location, latitude, longitude
-5. time - timestamps of records in songplays broken down into specific units
+5. time - timestamps of records in song plays broken down into specific units
   - start_time, hour, day, week, month, year, weekday
 
 ![sparkifydb_erd](https://user-images.githubusercontent.com/80867381/214580187-78bda55c-c1ed-4296-8614-0dab5892df16.png)
 
 # Steps
-1. Build and Configure project infrastructure and resources on aws using terraform
+1. Build and Configure project infrastructure and resources on AWS using Terraform
 
 2. Load the data from s3 Buckets
 
-3. Develop complete ETL pipeline for logs and songs data using spark 
+3. Develop a complete ETL pipeline for logs and songs data using spark and AWS EMR cluster
 
-4. test the result aginst defined queries
+4. test the result against defined analytical queries
 
 # Project Files
-- `Infrastructure-terraform` Build and Configure project infrastructure and resources on aws using terraform
+- `Infrastructure-terraform` Build and Configure project infrastructure and resources on AWS using terraform
 - `sparkify-etl.py` reads data from S3, processes that data using Spark, and writes them back to S3
 - `dl.cfg` contains your AWS credentials
 - `README.md` provides discussion on data processing and decisions
-- `udf.py` define helper udf functions to use it with spark in the ETL process
-- `sparkify-notebook.ipynb` Jupyter notebook to explore data and build and test the etl pipeline 
+- `udf.py` define helper udf functions to use with Spark in the ETL process
+- `sparkify-notebook.ipynb` Jupyter notebook to explore data and build and test the ETL pipeline 
